@@ -7,7 +7,7 @@ import ArticlesDetailView from './containers/ArticlesDetailView'
 const BaseRouter = () => (
     <div>
         <Route exact path='/' component={ArticlesListView} />
-        <Route exact path='/:articleID' component={ArticlesDetailView} />
+        <Route exact path='/article/:articleID' component={ArticlesDetailView} />
     </div>
 )
 

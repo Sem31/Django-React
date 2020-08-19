@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Articles from '../components/Articles'
+import ArticlesForm from '../components/ArticlesForm'
 import axios from 'axios'
 
 
@@ -34,6 +35,15 @@ export default class ArticlesListView extends Component {
         return (
             <div>
                 <Articles data={this.state.articles} />
+                <br />
+
+                <h2>Create an Article</h2>
+
+                <ArticlesForm
+                    requestType='post'
+                    articleId={null}
+                    btnText='Create'
+                />
             </div>
         )
     }
